@@ -1,5 +1,6 @@
 dependency_*
 *.dp
+matteo*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
