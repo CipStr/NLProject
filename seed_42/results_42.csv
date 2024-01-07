@@ -1,0 +1,6 @@
+Model,Openess to change,Self-enhancement
+Random,0.42,0.60
+Majority,0.00,0.86
+roBERTa w/C,0.45,0.86
+roBERTa w/CP,0.58,0.86
+roBERTa w/CPS,0.66,0.86
