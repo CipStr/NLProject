@@ -1,0 +1,111 @@
+Threshold: 0.1
+Report for triggers: 
+
+              precision    recall  f1-score   support
+
+           0       0.85      1.00      0.92      3027
+           1       0.16      0.94      0.27       531
+
+   micro avg       0.52      0.99      0.69      3558
+   macro avg       0.50      0.97      0.59      3558
+weighted avg       0.75      0.99      0.82      3558
+ samples avg       0.55      0.99      0.69      3558
+
+-------------------------------------------------------
+Report for emotions: 
+
+              precision    recall  f1-score   support
+
+     neutral       0.82      0.82      0.82      1572
+         joy       0.56      0.89      0.68       663
+    surprise       0.59      0.90      0.71       486
+     sadness       0.62      0.16      0.25       258
+       anger       1.00      0.01      0.01       369
+     disgust       0.43      0.52      0.47       101
+        fear       0.00      0.00      0.00       109
+
+    accuracy                           0.68      3558
+   macro avg       0.57      0.47      0.42      3558
+weighted avg       0.71      0.68      0.62      3558
+
+
+RMSE for triggers: 0.6289615477408527
+RMSE for emotions: 1.565597688238114
+
+
+Average F1 score for emotions per dialogue: 0.5205175304836469
+Average F1 score for triggers per dialogue: 0.5910906893826899
+
+
+RMSE for emotions per dialogue: 0.20087232651944165
+RMSE for triggers per dialogue: 0.05106684171345893
+
+
+Epoch 1
+-------------------------------
+<ipython-input-40-feffb237d296>:5: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  loss_fct_emo = torch.nn.CrossEntropyLoss(weight=torch.tensor(class_weights_emotions).to(device))
+<ipython-input-40-feffb237d296>:7: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  loss_fct_targ = torch.nn.BCEWithLogitsLoss(weight=torch.tensor(class_weights_triggers).to(device))
+Train loss: 4.231037  [    0/27764]
+Train loss: 2.916355  [ 5000/27764]
+Train loss: 9.006254  [10000/27764]
+Train loss: 1.908666  [15000/27764]
+Train loss: 0.774282  [20000/27764]
+Train loss: 1.148440  [25000/27764]
+
+Validation loss: 2.822405.
+Saving model ...
+Saved PyTorch Model State to model.pth
+
+Epoch 2
+-------------------------------
+Train loss: 0.638946  [    0/27764]
+Train loss: 2.121608  [ 5000/27764]
+Train loss: 10.071417  [10000/27764]
+Train loss: 1.636087  [15000/27764]
+Train loss: 0.480589  [20000/27764]
+Train loss: 1.158773  [25000/27764]
+
+Validation loss: 2.464576.
+Validation loss decreased (2.82240453 --> 2.46457579).  Saving model ...
+Saved PyTorch Model State to model.pth
+
+Epoch 3
+-------------------------------
+Train loss: 0.398595  [    0/27764]
+Train loss: 1.200345  [ 5000/27764]
+Train loss: 8.888077  [10000/27764]
+Train loss: 0.822848  [15000/27764]
+Train loss: 0.507953  [20000/27764]
+Train loss: 0.906251  [25000/27764]
+
+Validation loss: 2.259018.
+Validation loss decreased (2.46457579 --> 2.25901844).  Saving model ...
+Saved PyTorch Model State to model.pth
+
+Epoch 4
+-------------------------------
+Train loss: 0.274500  [    0/27764]
+Train loss: 0.676192  [ 5000/27764]
+Train loss: 8.435894  [10000/27764]
+Train loss: 0.548211  [15000/27764]
+Train loss: 0.671994  [20000/27764]
+Train loss: 0.366840  [25000/27764]
+
+Validation loss: 2.124139.
+Validation loss decreased (2.25901844 --> 2.12413903).  Saving model ...
+Saved PyTorch Model State to model.pth
+
+Epoch 5
+-------------------------------
+Train loss: 0.184293  [    0/27764]
+Train loss: 0.660383  [ 5000/27764]
+Train loss: 5.324230  [10000/27764]
+Train loss: 1.266934  [15000/27764]
+Train loss: 0.347086  [20000/27764]
+Train loss: 0.321617  [25000/27764]
+
+Validation loss: 2.079344.
+Validation loss decreased (2.12413903 --> 2.07934383).  Saving model ...
+Saved PyTorch Model State to model.pth
