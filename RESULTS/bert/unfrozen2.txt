@@ -1,0 +1,96 @@
+Train loss: 3.101296  [    0/27764]
+Train loss: 3.306303  [ 5000/27764]
+Train loss: 7.182024  [10000/27764]
+Train loss: 0.513191  [15000/27764]
+Train loss: 0.408868  [20000/27764]
+Train loss: 0.245433  [25000/27764]
+
+Validation loss: 1.800444.
+Saving model ...
+Saved PyTorch Model State to model.pth
+
+Epoch 2
+-------------------------------
+Train loss: 0.206290  [    0/27764]
+Train loss: 0.483553  [ 5000/27764]
+Train loss: 4.108768  [10000/27764]
+Train loss: 0.437626  [15000/27764]
+Train loss: 0.158058  [20000/27764]
+Train loss: 0.239896  [25000/27764]
+
+Validation loss: 1.442626.
+Validation loss decreased (1.80044378 --> 1.44262639).  Saving model ...
+Saved PyTorch Model State to model.pth
+
+Epoch 3
+-------------------------------
+Train loss: 0.117364  [    0/27764]
+Train loss: 0.338934  [ 5000/27764]
+Train loss: 2.052583  [10000/27764]
+Train loss: 0.235450  [15000/27764]
+Train loss: 0.109327  [20000/27764]
+Train loss: 0.422680  [25000/27764]
+
+Validation loss: 1.260227.
+Validation loss decreased (1.44262639 --> 1.26022679).  Saving model ...
+Saved PyTorch Model State to model.pth
+
+Threshold: 0.1
+Report for triggers: 
+
+              precision    recall  f1-score   support
+
+           0       0.85      1.00      0.92      3027
+           1       0.19      0.51      0.28       531
+
+   micro avg       0.67      0.93      0.77      3558
+   macro avg       0.52      0.76      0.60      3558
+weighted avg       0.75      0.93      0.82      3558
+ samples avg       0.73      0.93      0.80      3558
+
+-------------------------------------------------------
+Report for emotions: 
+
+              precision    recall  f1-score   support
+
+     neutral       0.97      0.96      0.96      1572
+         joy       0.89      0.98      0.93       663
+    surprise       0.91      0.97      0.94       486
+     sadness       0.95      0.89      0.92       258
+       anger       0.96      0.83      0.89       369
+     disgust       0.97      0.92      0.94       101
+        fear       0.95      0.89      0.92       109
+
+    accuracy                           0.94      3558
+   macro avg       0.94      0.92      0.93      3558
+weighted avg       0.94      0.94      0.94      3558
+
+RMSE for triggers: 0.505563837460182
+RMSE for emotions: 0.6317441082629118
+
+Average F1 score for emotions per dialogue: 0.8959592837393909
+Average F1 score for triggers per dialogue: 0.5728556508878764
+
+RMSE for emotions per dialogue: 0.14000310071544667
+RMSE for triggers per dialogue: 0.11569291994215823
+
+Epoch 4
+-------------------------------
+Train loss: 0.117931  [    0/27764]
+Train loss: 0.425443  [ 5000/27764]
+Train loss: 1.712442  [10000/27764]
+Train loss: 0.549929  [15000/27764]
+Train loss: 0.051106  [20000/27764]
+Train loss: 0.183486  [25000/27764]
+
+Validation loss: 1.271831.
+Epoch 5
+-------------------------------
+Train loss: 0.068077  [    0/27764]
+Train loss: 0.331665  [ 5000/27764]
+Train loss: 0.993031  [10000/27764]
+Train loss: 0.321938  [15000/27764]
+Train loss: 0.059438  [20000/27764]
+Train loss: 0.111414  [25000/27764]
+
+Validation loss: 1.276276.
