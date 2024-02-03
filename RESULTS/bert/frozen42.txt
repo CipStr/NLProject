@@ -60,18 +60,16 @@ Train loss: 1.222102  [25000/27764]
 Validation loss: 3.376416.
 Validation loss decreased (3.39606249 --> 3.37641563).
 
-Threshold: 0.1
 Report for triggers: 
 
               precision    recall  f1-score   support
 
-           0       0.85      1.00      0.92      3027
-           1       0.15      1.00      0.26       531
+         0.0       0.85      1.00      0.92      3027
+         1.0       0.00      0.00      0.00       531
 
-   micro avg       0.50      1.00      0.67      3558
-   macro avg       0.50      1.00      0.59      3558
-weighted avg       0.75      1.00      0.82      3558
- samples avg       0.50      1.00      0.67      3558
+    accuracy                           0.85      3558
+   macro avg       0.43      0.50      0.46      3558
+weighted avg       0.72      0.85      0.78      3558
 
 -------------------------------------------------------
 Report for emotions: 
@@ -90,11 +88,11 @@ Report for emotions:
    macro avg       0.20      0.26      0.20      3558
 weighted avg       0.42      0.42      0.38      3558
 
-RMSE for triggers: 0.654189276852788
+RMSE for triggers: 0.38631741704411376
 RMSE for emotions: 1.7388527162963896
 
 Average F1 score for emotions per dialogue: 0.306505747846006
-Average F1 score for triggers per dialogue: 0.5869713323645385
+Average F1 score for triggers per dialogue: 0.48994951779493734
 
 RMSE for emotions per dialogue: 0.1497872659922997
-RMSE for triggers per dialogue: 0.03946638929889752
+RMSE for triggers per dialogue: 0.0920391847588083
