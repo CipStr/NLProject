@@ -1,101 +1,99 @@
-Train loss: 3.101296  [    0/27764]
-Train loss: 2.211752  [ 5000/27764]
-Train loss: 10.017096  [10000/27764]
-Train loss: 1.760348  [15000/27764]
-Train loss: 2.293756  [20000/27764]
-Train loss: 1.706915  [25000/27764]
+Train loss: 3.279730  [    0/28046]
+Train loss: 5.936538  [ 5000/28046]
+Train loss: 2.298452  [10000/28046]
+Train loss: 4.271167  [15000/28046]
+Train loss: 2.419823  [20000/28046]
+Train loss: 1.507149  [25000/28046]
 
-Validation loss: 3.605283.
+Validation loss: 3.645313.
 Saving model ...
 Saved PyTorch Model State to model.pth
 
 Epoch 2
 -------------------------------
-Train loss: 1.834868  [    0/27764]
-Train loss: 2.435632  [ 5000/27764]
-Train loss: 10.148561  [10000/27764]
-Train loss: 2.502420  [15000/27764]
-Train loss: 1.864115  [20000/27764]
-Train loss: 1.646284  [25000/27764]
+Train loss: 2.389756  [    0/28046]
+Train loss: 8.709017  [ 5000/28046]
+Train loss: 1.804999  [10000/28046]
+Train loss: 3.964079  [15000/28046]
+Train loss: 1.539885  [20000/28046]
+Train loss: 1.978800  [25000/28046]
 
-Validation loss: 3.484959.
-Validation loss decreased (3.60528293 --> 3.48495940).  Saving model ...
+Validation loss: 3.526539.
+Validation loss decreased (3.64531317 --> 3.52653854).  Saving model ...
 Saved PyTorch Model State to model.pth
 
 Epoch 3
 -------------------------------
-Train loss: 1.736152  [    0/27764]
-Train loss: 1.581771  [ 5000/27764]
-Train loss: 10.000854  [10000/27764]
-Train loss: 1.575773  [15000/27764]
-Train loss: 1.733273  [20000/27764]
-Train loss: 1.432702  [25000/27764]
+Train loss: 1.810272  [    0/28046]
+Train loss: 7.876591  [ 5000/28046]
+Train loss: 1.528618  [10000/28046]
+Train loss: 3.208185  [15000/28046]
+Train loss: 2.426494  [20000/28046]
+Train loss: 1.548673  [25000/28046]
 
-Validation loss: 3.418449.
-Validation loss decreased (3.48495940 --> 3.41844938).  Saving model ...
+Validation loss: 3.465065.
+Validation loss decreased (3.52653854 --> 3.46506503).  Saving model ...
 Saved PyTorch Model State to model.pth
 
 Epoch 4
 -------------------------------
-Train loss: 1.901499  [    0/27764]
-Train loss: 2.053717  [ 5000/27764]
-Train loss: 9.645062  [10000/27764]
-Train loss: 1.455593  [15000/27764]
-Train loss: 1.633714  [20000/27764]
-Train loss: 1.546875  [25000/27764]
+Train loss: 1.643614  [    0/28046]
+Train loss: 9.206066  [ 5000/28046]
+Train loss: 1.729266  [10000/28046]
+Train loss: 4.101004  [15000/28046]
+Train loss: 2.625643  [20000/28046]
+Train loss: 1.789086  [25000/28046]
 
-Validation loss: 3.381075.
-Validation loss decreased (3.41844938 --> 3.38107526).  Saving model ...
+Validation loss: 3.430964.
+Validation loss decreased (3.46506503 --> 3.43096405).  Saving model ...
 Saved PyTorch Model State to model.pth
 
 Epoch 5
 -------------------------------
-Train loss: 1.669935  [    0/27764]
-Train loss: 1.515957  [ 5000/27764]
-Train loss: 10.353572  [10000/27764]
-Train loss: 1.960996  [15000/27764]
-Train loss: 1.852675  [20000/27764]
-Train loss: 1.228450  [25000/27764]
+Train loss: 1.527121  [    0/28046]
+Train loss: 8.099099  [ 5000/28046]
+Train loss: 1.725718  [10000/28046]
+Train loss: 2.956216  [15000/28046]
+Train loss: 1.701258  [20000/28046]
+Train loss: 1.604184  [25000/28046]
 
-Validation loss: 3.363274.
-Validation loss decreased (3.38107526 --> 3.36327383).
+Validation loss: 3.416205.
+Validation loss decreased (3.43096405 --> 3.41620543).
 
-Threshold: 0.1
 Report for triggers: 
 
               precision    recall  f1-score   support
 
-           0       0.85      1.00      0.92      3027
-           1       0.15      1.00      0.26       531
+         0.0       0.84      1.00      0.91      2907
+         1.0       0.00      0.00      0.00       542
 
-   micro avg       0.50      1.00      0.67      3558
-   macro avg       0.50      1.00      0.59      3558
-weighted avg       0.75      1.00      0.82      3558
- samples avg       0.50      1.00      0.67      3558
+    accuracy                           0.84      3449
+   macro avg       0.42      0.50      0.46      3449
+weighted avg       0.71      0.84      0.77      3449
 
 -------------------------------------------------------
 Report for emotions: 
 
               precision    recall  f1-score   support
 
-     neutral       0.72      0.43      0.54      1572
-         joy       0.28      0.80      0.42       663
-    surprise       0.39      0.59      0.47       486
-     sadness       0.00      0.00      0.00       258
-       anger       0.00      0.00      0.00       369
-     disgust       0.00      0.00      0.00       101
-        fear       0.00      0.00      0.00       109
+     neutral       0.74      0.38      0.50      1499
+         joy       0.25      0.82      0.39       599
+    surprise       0.38      0.60      0.46       458
+     sadness       0.00      0.00      0.00       269
+       anger       0.00      0.00      0.00       410
+     disgust       0.00      0.00      0.00        93
+        fear       0.00      0.00      0.00       121
 
-    accuracy                           0.42      3558
-   macro avg       0.20      0.26      0.20      3558
-weighted avg       0.43      0.42      0.38      3558
-
-RMSE for triggers: 0.6538843624223891
-RMSE for emotions: 1.7349691766267366
+    accuracy                           0.39      3449
+   macro avg       0.20      0.26      0.19      3449
+weighted avg       0.41      0.39      0.35      3449
 
 
-Average F1 score for emotions per dialogue: 0.3098506132016595
-Average F1 score for triggers per dialogue: 0.5876783321316885
+RMSE for triggers: 0.39678323835939566
+RMSE for emotions: 1.7959879258357372
 
-RMSE for emotions per dialogue: 0.15116205130132557
-RMSE for triggers per dialogue: 0.03931338715314685
+Average F1 score for emotions per dialogue: 0.2821766319211636
+Average F1 score for triggers per dialogue: 0.48181603410201634
+
+RMSE for emotions per dialogue: 0.14921456739214248
+RMSE for triggers per dialogue: 0.09401413000487946
