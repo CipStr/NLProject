@@ -1,152 +1,128 @@
-Train loss: 3.279730  [    0/28046]
-Train loss: 14.896080  [ 5000/28046]
-Train loss: 0.340137  [10000/28046]
-Train loss: 0.956932  [15000/28046]
-Train loss: 1.739790  [20000/28046]
-Train loss: 2.225142  [25000/28046]
-
-Validation loss: 1.818372.
-Saving model ...
-Saved PyTorch Model State to model.pth
-
-Epoch 2
--------------------------------
-Train loss: 1.139873  [    0/28046]
-Train loss: 14.461307  [ 5000/28046]
-Train loss: 0.173358  [10000/28046]
-Train loss: 1.533389  [15000/28046]
-Train loss: 1.515290  [20000/28046]
-Train loss: 0.626946  [25000/28046]
-
-Validation loss: 1.378438.
-Validation loss decreased (1.81837164 --> 1.37843785).  Saving model ...
-Saved PyTorch Model State to model.pth
-
-Epoch 3
--------------------------------
-Train loss: 0.781422  [    0/28046]
-Train loss: 9.035522  [ 5000/28046]
-Train loss: 0.158874  [10000/28046]
-Train loss: 0.889501  [15000/28046]
-Train loss: 0.257415  [20000/28046]
-Train loss: 0.474354  [25000/28046]
-
-Validation loss: 1.229438.
-Validation loss decreased (1.37843785 --> 1.22943790).  Saving model ...
-Saved PyTorch Model State to model.pth
-
-Epoch 4
--------------------------------
-Train loss: 0.259414  [    0/28046]
-Train loss: 0.359126  [ 5000/28046]
-Train loss: 0.107327  [10000/28046]
-Train loss: 1.066470  [15000/28046]
-Train loss: 0.276790  [20000/28046]
-Train loss: 0.215559  [25000/28046]
-
-Validation loss: 1.273414.
-Epoch 5
--------------------------------
-Train loss: 0.365906  [    0/28046]
-Train loss: 0.386624  [ 5000/28046]
-Train loss: 0.073724  [10000/28046]
-Train loss: 1.490422  [15000/28046]
-Train loss: 0.163420  [20000/28046]
-Train loss: 0.194349  [25000/28046]
-
-Validation loss: 1.272032.
-Saved PyTorch Model State to model.pth
-
-Report for triggers: 
-
-              precision    recall  f1-score   support
-
-         0.0       0.85      0.96      0.90      2907
-         1.0       0.28      0.08      0.12       542
-
-    accuracy                           0.82      3449
-   macro avg       0.57      0.52      0.51      3449
-weighted avg       0.76      0.82      0.78      3449
-
--------------------------------------------------------
-Report for emotions: 
-
-              precision    recall  f1-score   support
-
-     neutral       0.95      0.95      0.95      1499
-         joy       0.88      0.97      0.92       599
-    surprise       0.91      0.96      0.93       458
-     sadness       0.93      0.85      0.89       269
-       anger       0.93      0.81      0.87       410
-     disgust       0.92      0.92      0.92        93
-        fear       0.96      0.88      0.92       121
-
-    accuracy                           0.93      3449
-   macro avg       0.93      0.91      0.91      3449
-weighted avg       0.93      0.93      0.93      3449
-
-RMSE for triggers: 0.4195152458031688
-RMSE for emotions: 0.7496012277070244
-
-Average F1 score for emotions per dialogue: 0.8762611335213935
-Average F1 score for triggers per dialogue: 0.4981208536135571
-
-RMSE for emotions per dialogue: 0.1568426707376297
-RMSE for triggers per dialogue: 0.1233017884693599
-
 Majority classifier for emotions: 
 
               precision    recall  f1-score   support
 
-       anger       0.00      0.00      0.00       410
-     disgust       0.00      0.00      0.00        93
-        fear       0.00      0.00      0.00       121
-         joy       0.00      0.00      0.00       599
-     neutral       0.43      1.00      0.61      1499
-     sadness       0.00      0.00      0.00       269
-    surprise       0.00      0.00      0.00       458
+       anger       0.00      0.00      0.00       478
+     disgust       0.00      0.00      0.00       145
+        fear       0.00      0.00      0.00        71
+         joy       0.00      0.00      0.00       603
+     neutral       0.42      1.00      0.59      1522
+     sadness       0.00      0.00      0.00       365
+    surprise       0.00      0.00      0.00       432
 
-    accuracy                           0.43      3449
-   macro avg       0.06      0.14      0.09      3449
-weighted avg       0.19      0.43      0.26      3449
+    accuracy                           0.42      3616
+   macro avg       0.06      0.14      0.08      3616
+weighted avg       0.18      0.42      0.25      3616
 
 -------------------------------------------------------
 Random classifier for emotions: 
 
               precision    recall  f1-score   support
 
-       anger       0.11      0.12      0.11       410
-     disgust       0.03      0.18      0.06        93
-        fear       0.03      0.15      0.06       121
-         joy       0.18      0.15      0.16       599
-     neutral       0.42      0.13      0.20      1499
-     sadness       0.07      0.13      0.09       269
-    surprise       0.13      0.14      0.14       458
+       anger       0.12      0.12      0.12       478
+     disgust       0.06      0.21      0.09       145
+        fear       0.03      0.20      0.05        71
+         joy       0.18      0.16      0.17       603
+     neutral       0.42      0.14      0.21      1522
+     sadness       0.09      0.13      0.11       365
+    surprise       0.11      0.13      0.12       432
 
-    accuracy                           0.14      3449
-   macro avg       0.14      0.14      0.12      3449
-weighted avg       0.25      0.14      0.16      3449
+    accuracy                           0.14      3616
+   macro avg       0.14      0.16      0.12      3616
+weighted avg       0.25      0.14      0.16      3616
 
 -------------------------------------------------------
 Majority classifier for triggers: 
 
               precision    recall  f1-score   support
 
-         0.0       0.84      1.00      0.91      2907
-         1.0       0.00      0.00      0.00       542
+         0.0       0.85      1.00      0.92      3088
+         1.0       0.00      0.00      0.00       528
 
-    accuracy                           0.84      3449
-   macro avg       0.42      0.50      0.46      3449
-weighted avg       0.71      0.84      0.77      3449
+    accuracy                           0.85      3616
+   macro avg       0.43      0.50      0.46      3616
+weighted avg       0.73      0.85      0.79      3616
 
 -------------------------------------------------------
 Random classifier for triggers: 
 
               precision    recall  f1-score   support
 
-         0.0       0.85      0.50      0.63      2907
-         1.0       0.17      0.54      0.26       542
+         0.0       0.85      0.50      0.63      3088
+         1.0       0.14      0.48      0.22       528
 
-    accuracy                           0.51      3449
-   macro avg       0.51      0.52      0.44      3449
-weighted avg       0.75      0.51      0.57      3449
+    accuracy                           0.49      3616
+   macro avg       0.49      0.49      0.42      3616
+weighted avg       0.74      0.49      0.57      3616
+
+CONTEXT
+Report for triggers: 
+
+              precision    recall  f1-score   support
+
+           0       0.85      1.00      0.92      3088
+           1       0.00      0.00      0.00       528
+
+    accuracy                           0.85      3616
+   macro avg       0.43      0.50      0.46      3616
+weighted avg       0.73      0.85      0.79      3616
+
+-------------------------------------------------------
+Report for emotions: 
+
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      1522
+           1       0.17      1.00      0.29       603
+           2       0.00      0.00      0.00       432
+           3       0.00      0.00      0.00       365
+           4       0.00      0.00      0.00       478
+           5       0.00      0.00      0.00       145
+           6       0.00      0.00      0.00        71
+
+    accuracy                           0.17      3616
+   macro avg       0.02      0.14      0.04      3616
+weighted avg       0.03      0.17      0.05      3616
+
+RMSE for triggers: 0.38212262313954176
+RMSE for emotions: 1.8072953194432326
+Average F1 score per dialogue for emotions: 0.0857314091464972
+Average F1 score per dialogue for triggers: 0.4516674560382605
+Average RMSE score per dialogue for emotions: 0.06971985005424532
+Average RMSE score per dialogue for triggers: 0.042689893964527506
+
+WITHOUT CONTEXT
+Report for triggers: 
+
+              precision    recall  f1-score   support
+
+         0.0       0.85      1.00      0.92      3088
+         1.0       0.00      0.00      0.00       528
+
+    accuracy                           0.85      3616
+   macro avg       0.43      0.50      0.46      3616
+weighted avg       0.73      0.85      0.79      3616
+
+-------------------------------------------------------
+Report for emotions: 
+
+              precision    recall  f1-score   support
+
+     neutral       0.60      0.84      0.70      1522
+         joy       0.37      0.27      0.31       603
+    surprise       0.56      0.47      0.51       432
+     sadness       0.27      0.39      0.32       365
+       anger       0.49      0.06      0.11       478
+     disgust       0.00      0.00      0.00       145
+        fear       0.00      0.00      0.00        71
+
+    accuracy                           0.50      3616
+   macro avg       0.33      0.29      0.28      3616
+weighted avg       0.47      0.50      0.45      3616
+
+RMSE for triggers: 0.38320666112783497
+RMSE for emotions: 1.918701625892765
+Average F1 score for emotions per dialogue: 0.34561695151879607
+Average F1 score for triggers per dialogue: 0.45152805697203935
+RMSE for emotions per dialogue: 0.15780416399659228
+RMSE for triggers per dialogue: 0.042585082636541705
