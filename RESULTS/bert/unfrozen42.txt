@@ -55,6 +55,16 @@ Random classifier for triggers:
    macro avg       0.50      0.51      0.44      3616
 weighted avg       0.76      0.51      0.58      3616
 
+SEQUENCES:
+Average dialogue f1 scores for emotions on majority classifier: 
+0.17765389128254355
+Average dialogue f1 scores for emotions on random classifier: 
+0.09431057599459855
+Average dialogue f1 scores for triggers on majority classifier: 
+0.45175040861028604
+Average dialogue f1 scores for triggers on random classifier: 
+0.4124083391425957
+
 CONTEXT
 Report for triggers: 
 
